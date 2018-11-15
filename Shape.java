@@ -1,8 +1,8 @@
 abstract class Shape{
     
-    private String name;
-    private int numSides; 
-    private double area;
+    public String name;
+    public int numSides; 
+    public double area;
 
     //Base constructor
     public Shape(String name, int numSides){
