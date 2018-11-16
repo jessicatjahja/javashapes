@@ -4,11 +4,7 @@ public class Triangle extends Shape implements Printable{
     protected int side1Length;
     protected int side2Length;
     protected int height;
-    
-    public Triangle(){
-        this(1,1,1);
-    }
-    
+           
     public Triangle(String name, int numSides, int baseLength, int side1Length, int side2Length, int height){
         super(name, numSides);
         this.baseLength = baseLength;
