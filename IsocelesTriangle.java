@@ -11,7 +11,7 @@ public class IsocelesTriangle extends Triangle implements Printable{
     @Override
 	public String toString() {
         return String.format("Shape: %s%n Base: %d%n Side 1: %d%n Side 2: %d%n Height: %d%n Area: %d%n",
-        name, baseLength, sideLength, sideLength, height, area);
+        name, baseLength, sideLength, sideLength, height, super.getArea(baseLength, height));
 	}
 
 	@Override
