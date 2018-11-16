@@ -10,7 +10,7 @@ public class Rhombus extends Rectangle implements Printable{
 
     @Override
 	public String toString() {
-        return String.format("Shape: %s%n Sides: %d%n Height: %d%n Area: %d%n",
+        return String.format("Shape: %s%n Sides: %d%n Height: %d%n Area: %f%n",
         name, side, height, super.getArea(side, height));
 	}
 

@@ -15,7 +15,7 @@ public class Rectangle extends Shape implements Printable{
 
     @Override
 	public String toString() {
-        return String.format("Shape: %s%n Width: %d%n Height: %d%n Area: %d%n",
+        return String.format("Shape: %s%n Width: %d%n Height: %d%n Area: %f%n",
         name, width, height, getArea(width, height));
 	}
 

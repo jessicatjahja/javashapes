@@ -1,8 +1,10 @@
 import java.util.*;
 
-public class ShapeTest{
-    public static ArrayList<Shape> shapes = new ArrayList<Shape>();
+public class ShapeTest{    
     public static void main(String[] args) {
+        
+        ArrayList<Printable> shapes = new ArrayList<Printable>();
+
         Triangle triangle = new Triangle("Triangle", 3, 3, 4, 5, 3);
         EquilateralTriangle eqTriangle = new EquilateralTriangle("Equilateral Triangle", 3, 7, 4);
         IsocelesTriangle isoTriangle = new IsocelesTriangle("Isoceles Triangle", 3, 8, 9, 7);
@@ -20,7 +22,7 @@ public class ShapeTest{
         shapes.add(parallelogram);
         shapes.add(rhombus);
 
-        for(Shape shape : shapes){
+        for(Printable shape : shapes){
             shape.print();
         }
     }
