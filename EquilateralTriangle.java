@@ -1,8 +1,7 @@
 public class EquilateralTriangle extends Triangle implements Printable{
     
     private int sideLength;
-    private int height;
-    private double area = getArea(this.sideLength, this.height);
+    private int height;    
 
     public EquilateralTriangle(String name, int numSides, int sideLength, int height){
         super(name, numSides, sideLength, sideLength, sideLength, height);        
