@@ -4,8 +4,7 @@ public class Triangle extends Shape implements Printable{
     protected int side1Length;
     protected int side2Length;
     protected int height;
-    protected double area = getArea(this.baseLength, this.height);
-
+    
     public Triangle(){
         this(1,1,1);
     }
@@ -19,8 +18,7 @@ public class Triangle extends Shape implements Printable{
     }
 
     public double getArea(int baseLength, int height){
-        double area = (0.5 * baseLength * height);
-        return area;
+        return (0.5 * baseLength * height);
     }
 
     @Override

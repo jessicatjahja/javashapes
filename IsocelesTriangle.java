@@ -2,8 +2,7 @@ public class IsocelesTriangle extends Triangle implements Printable{
     
     private int baseLength;
     private int sideLength;
-    private int height;
-    private double area = getArea(this.baseLength, this.height);
+    private int height;    
 
     public IsocelesTriangle(String name, int numSides, int baseLength, int sideLength, int height){
         super(name, numSides, baseLength, sideLength, sideLength, height);        
