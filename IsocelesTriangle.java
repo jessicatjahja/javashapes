@@ -1,6 +1,5 @@
 public class IsocelesTriangle extends Triangle implements Printable{
     
-    private String name;
     private int baseLength;
     private int sideLength;
     private int height;
