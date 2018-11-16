@@ -5,7 +5,10 @@ public class IsocelesTriangle extends Triangle implements Printable{
     private int height;    
 
     public IsocelesTriangle(String name, int numSides, int baseLength, int sideLength, int height){
-        super(name, numSides, baseLength, sideLength, sideLength, height);        
+        super(name, numSides, baseLength, sideLength, sideLength, height);
+        this.baseLength = baseLength;
+        this.sideLength = sideLength;
+        this.height = height;    
     }
 
     @Override

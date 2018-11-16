@@ -5,6 +5,7 @@ public class Rhombus extends Rectangle implements Printable{
 
     public Rhombus(String name, int numSides, int side, int height){
         super(name, numSides, side, side);
+        this.side = side;
         this.height = height;        
     }
 

@@ -3,7 +3,8 @@ public class Square extends Rectangle implements Printable{
     private int side;    
 
     public Square(String name, int numSides, int side){
-        super(name, numSides, side, side);        
+        super(name, numSides, side, side);
+        this.side = side;
     }
 
     @Override

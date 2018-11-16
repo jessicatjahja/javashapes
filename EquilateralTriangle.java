@@ -3,8 +3,10 @@ public class EquilateralTriangle extends Triangle implements Printable{
     private int sideLength;
     private int height;    
 
-    public EquilateralTriangle(String name, int numSides, int sideLength, int height){
-        super(name, numSides, sideLength, sideLength, sideLength, height);        
+    public EquilateralTriangle(String name, int numSides, int sideLength, int height){            
+        super(name, numSides, sideLength, sideLength, sideLength, height);
+        this.sideLength = sideLength;
+        this.height = height;
     }
 
     @Override
