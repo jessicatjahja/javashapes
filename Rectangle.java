@@ -2,8 +2,7 @@ public class Rectangle extends Shape implements Printable{
 
     protected int width;
     protected int height;
-    protected double area = getArea(this.width, this.height);
-    
+        
     public Rectangle(String name, int numSides, int width, int height){
         super(name, numSides);
         this.width = width;
@@ -11,8 +10,7 @@ public class Rectangle extends Shape implements Printable{
     }
 
     public double getArea(int width, int height){
-        double area = (width * height);
-        return area;
+        return width * height;
     }
 
     @Override
