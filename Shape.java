@@ -1,4 +1,4 @@
-abstract class Shape{
+public abstract class Shape{
     
     public String name;
     public int numSides; 
@@ -11,7 +11,7 @@ abstract class Shape{
     }
 
     //Abstract method(s) - different for all subclasses
-    abstract public double getArea();
+    abstract public double getArea(int side1, int side2);
 
     //Implemented method(s) - same for all subclasses
     public void changeName(String name){
