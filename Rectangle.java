@@ -2,27 +2,23 @@ public class Rectangle extends Shape implements Printable{
 
     protected int width;
     protected int height;
-    protected int side1Length;
-    protected int side2Length;
-    protected double area = getArea(this.baseLength, this.height);
+    protected double area = getArea(this.width, this.height);
     
-    public Rectangle(String name, int numSides, int baseLength, int side1Length, int side2Length, int height){
+    public Rectangle(String name, int numSides, int width, int height){
         super(name, numSides);
-        this.baseLength = baseLength;
-        this.side1Length = side1Length;
-        this.side2Length = side2Length;
+        this.width = width;
         this.height = height;
     }
 
-    public double getArea(int baseLength, int height){
-        double area = (baseLength * height);
+    public double getArea(int width, int height){
+        double area = (width * height);
         return area;
     }
 
     @Override
 	public String toString() {
-        return String.format("Shape: %s%n Base: %d%n Side 1: %d%n Side 2: %d%n Height: %d%n Area: %d%n",
-        name, baseLength, side1Length, side2Length, height, area);
+        return String.format("Shape: %s%n Width: %d%n Height: %d%n Area: %d%n",
+        name, width, height, area);
 	}
 
 	@Override
