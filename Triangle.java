@@ -5,6 +5,10 @@ public class Triangle extends Shape implements Printable{
     protected int side2Length;
     protected int height;
     protected double area = getArea(this.baseLength, this.height);
+
+    public Triangle(){
+        this(1,1,1);
+    }
     
     public Triangle(String name, int numSides, int baseLength, int side1Length, int side2Length, int height){
         super(name, numSides);
