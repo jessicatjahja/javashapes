@@ -13,8 +13,8 @@ public class Parallelogram extends Rectangle implements Printable{
 
     @Override
 	public String toString() {
-        return String.format("Shape: %s%n Base: %d%n Sides: %d%n Height: %d%n Area: %f%n",
-        name, baseLength, sideLength, height, super.getArea(baseLength, height));
+        return String.format("Shape: %s%n Number of Sides: %d%n Base: %d%n Sides: %d%n Height: %d%n Area: %f%n",
+        name, numSides, baseLength, sideLength, height, super.getArea(baseLength, height));
 	}
 
 	@Override

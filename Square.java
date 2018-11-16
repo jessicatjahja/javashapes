@@ -9,8 +9,8 @@ public class Square extends Rectangle implements Printable{
 
     @Override
 	public String toString() {
-        return String.format("Shape: %s%n Width: %d%n Height: %d%n Area: %f%n",
-        name, side, side, super.getArea(side, side));
+        return String.format("Shape: %s%n Number of Sides: %d%n Width: %d%n Height: %d%n Area: %f%n",
+        name, numSides, side, side, super.getArea(side, side));
 	}
 
 	@Override
